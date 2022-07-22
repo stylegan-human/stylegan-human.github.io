@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="StyleGAN-Human: A Data-Centric Odyssey of Human Generation">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StyleGAN-Human: A Data-Centric Odyssey of Human Generation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <script src="https://kit.fontawesome.com/ec39017701.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <div id="loading">
+    <div class="loader"></div>
+    <!-- <img id="loading-image" src="path/to/ajax-loader.gif" alt="Loading..." /> -->
+  </div>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title">StyleGAN-Human: A Data-Centric Odyssey of Human Generation 
+            </h1>
+            <h1 class="title is-1 publication-title">  SHHQ Dataset</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <h3 style="color:#5a6268;">ECCV 2022</h3>
+
+                <span class="author-block">
+                  <a href="mailto:fujianglin@sensetime.com" target="_blank">Jianglin Fu</a><sup>1*</sup>, </span>
+                <span class="author-block">
+                  <a href="mailto:lishikai@sensetime.com" target="_blank">Shikai Li</a><sup>1*</sup>, </span>
+                <span class="author-block">
+                  <a href="https://yumingj.github.io/" target="_blank">Yuming Jiang</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://kwanyeelin.github.io/" target="_blank">Kwan-Yee Lin</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=AerkT0YAAAAJ&hl=zh-CN" target="_blank">Chen
+                    Qian</a><sup>1</sup>,
+                </span>
+                <br>
+                <span class="author-block">
+                  <a href="https://www.mmlab-ntu.com/person/ccloy/" target="_blank">Chen Change Loy</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://dblp.org/pid/50/8731.html" target="_blank">Wayne Wu</a><sup>1,3 &#8224</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a><sup>2</sup>
+                </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>SenseTime Research, </span>
+              <span class="author-block"><sup>2</sup>S-Lab, Nanyang Technological University, </span>
+              <span class="author-block"><sup>3</sup>Shanghai AI Laboratory </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="./index.html" class="external-link button is-normal is-rounded is-dark ">
+                    <span class="icon">
+                      <i class="fas fa-angle-left"></i>
+                    </span>
+                    <span>Back to main page</span>
+                  </a>
+              </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+ 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Dataset Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+                SHHQ is a dataset with high-quality full-body human images in a resolution of 1024 × 512.
+                <br>
+                For now, <strong>SHHQ-1.0</strong> with 40K images is released! More data will be released in the later versions.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="section" >
+    <div class="container ">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3 has-text-centered"> Preview </h2>
+            <div class="content ">
+                <a href="" target="_blank">
+                    <img class="cover" id="mag1" src="./static/images/preview_samples1.png">
+                </a>
+                <script>magnify("mag1", 3);</script>
+            </div>
+            <!-- <div class="content has-text-justified">
+                <a href="" target="_blank">
+                    <img class="cover" id="mag2" src="./static/images/preview_samples2.png"
+                    style="width:1000px; margin-bottom:20px;">
+                </a>
+                <script>magnify("mag2", 3);</script>
+            </div> -->
+            <p class="has-text-centered">Hover mouse over the image for a zoomed-in view.</p>
+
+            <i class='fas fa-download'></i> &nbsp;
+                <a href="https://drive.google.com/file/d/1tnNFfmFtzRbYL3qEnNXQ_ShaN9YV5tI5/view?usp=sharing"
+                  target="_blank">
+                  Click here to download the preview version with 100 images randomly sampled from SHHQ-1.0. </a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-5">
+                Download instruction for full SHHQ-1.0 dataset: </a>
+                <a href="https://github.com/stylegan-human/StyleGAN-Human/blob/main/docs/Dataset.md#download-instructions"> 
+                    <span class="icon"><i class="fab fa-github"></i></span> 
+                </a>
+            </h2>
+          <div class="content has-text-justified">
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="logos">
+      <img class="thumbnail" src="static/images/NTU.png" style="height:50px;">
+      <img class="thumbnail" src="static/images/sensetime.jpeg" style="height:50px;">
+      <img class="thumbnail" src="static/images/shanghaiAILAB_up.jpeg" style="height:50px;">
+    </div>
+    <br>
+    <div class="columns is-centered">
+      <div class="content">
+        <p> Thanks to the great effort done by Nerfies' project, we borrow the website template from <a
+            href="https://github.com/nerfies/nerfies.github.io" target="_blank"> nerfies's webpage</a>. </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $(window).on('load', function () {
+      $('#loading').hide();
+    })
+  </script>
+</body>
+
+</html>

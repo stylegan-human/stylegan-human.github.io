@@ -39,16 +39,17 @@ function magnify(imgID, zoom) {
     pos = getCursorPos(e);
     x = pos.x;
     y = pos.y;
-    console.log(e, x, y);
+    console.log("lalalalla" , e, x, y);
     /*prevent the magnifier glass from being positioned outside the image:*/
     if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
     if (x < w / zoom) {x = w / zoom;}
     if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
     if (y < h / zoom) {y = h / zoom;}
     /*set the position of the magnifier glass:*/
+    console.log("x,y,w,h: ",x,y,w,h)
     glass.style.left = (x - w) + "px";
-    glass.style.top = (y - h) + "px";
-    console.log(glass.style.left , glass.style.top );
+    glass.style.top = (y ) + "px"; //(y -h) + "px";
+    console.log("!!!!!  ",glass.style.left , glass.style.top );
     /*display what the magnifier glass "sees":*/
     glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px"; // '-' for negtive
     console.log(glass, glass.style.backgroundPosition )
